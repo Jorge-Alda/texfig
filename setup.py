@@ -1,9 +1,9 @@
-from setuptools import setup
+import setuptools
 
 with open('README.md', 'r') as f:
 	long_description = f.read()
 
-setup(
+setuptools.setup(
 	name='texfig',
 	version='1.0',
 	description="Utility to generate PGF vector files from Python's Matplotlib plots to use in LaTeX documents.",
@@ -11,5 +11,5 @@ setup(
 	author='Nils Leif Fischer',
 	author_email='hello@nilsleiffischer.de',
 	url='https://nilsleiffischer.de/texfig/',
-	packages=['texfig'],
+	packages=setuptools.find_packages(),
 )
